@@ -2,34 +2,64 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 body {
-  /* width: 800px; */
+  width: 800px;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: "Noto Sans JP", MyYuGothicM, YuGothic, -apple-system,
+    BlinkMacSystemFont, "Hiragino kaku Gothic ProN", Meiryo, Verdana, arial,
+    helvetica, sans-serif;
 }
 
 header {
-  height: 150px;
+  padding: 7px;
 }
 
-.layout_wrapper {
+.layout-wrapper {
   flex: 1;
   display: flex;
 }
 main {
+  padding: 10px;
   flex: 1;
 }
 nav {
+  padding: 7px;
   width: 150px;
 }
 aside {
+  padding: 7px;
   width: 200px;
 }
 /* 無限スクロールを用いる際nav,asideの下に移動させる */
 footer {
-  height: 200px;
+  padding: 0px;
+  background-color: rgb(00, 25, 00);
+  color: white;
+  text-align: center;
 }
+dt {
+  font-size: 1.4rem;
+  padding: 5px 10px;
+  background-color: rgb(43, 230, 43);
+  color: white;
+}
+
+.bio-text p {
+  line-height: 1.8;
+}
+
+.profile-box {
+  text-align: center;
+}
+.profile-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-right: 1.5rem;
+}
+
 /* スクリーンを小さくした場合 */
 @media screen and (max-width: 900px) {
   body,
@@ -38,7 +68,7 @@ footer {
   aside {
     width: 100%;
   }
-  .layout_wrapper {
+  .layout-wrapper {
     flex-direction: column;
   }
   /* navより前にmainを置く場合 */
