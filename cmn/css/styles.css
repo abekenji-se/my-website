@@ -12,6 +12,50 @@ body {
     helvetica, sans-serif;
 }
 
+.LP-work {
+  display: flex;
+  flex-wrap: wrap; /* 横に並べて折り返し可能にする */
+  justify-content: left;
+  gap: 1rem; /* アイテム間の余白 */
+}
+
+.LP-work a {
+  width: 170px;
+}
+
+.LP-img {
+  width: 170px;
+  height: 250px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 中央揃え */
+  text-decoration: none;
+  margin: 0.5rem;
+}
+
+.btn span {
+  display: inline-block;
+  background-color: #4caf50; /* 緑色 */
+  color: white;
+  padding: 0.2rem 0.5rem;
+
+  margin-top: 0.5rem;
+
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 10px; /* 画像との間隔 */
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+.btn span:hover {
+  background-color: #45a049; /* ホバー時の色変更 */
+}
+
 header {
   padding: 7px;
 }
@@ -35,15 +79,25 @@ aside {
 /* 無限スクロールを用いる際nav,asideの下に移動させる */
 footer {
   padding: 0px;
-  background-color: rgb(00, 25, 00);
-  color: white;
+  /*background-color: rgb(00, 25, 00);*/
+  color: black;
   text-align: center;
 }
 dt {
   font-size: 1.4rem;
-  padding: 5px 10px;
+  font-weight: bold;
+  padding: 1rem 1rem 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   background-color: rgb(43, 230, 43);
   color: white;
+  font-family: "ＭＳ 明朝", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+
+.bio-text {
+  margin-top: 10px;
 }
 
 .bio-text p {
